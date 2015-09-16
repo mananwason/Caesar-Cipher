@@ -21,7 +21,9 @@ int main(int argc, const char * argv[]) {
     scanf("%d", &diff);
 
     while (str[i]) {
-        printf("%d\n",str[i++]+ diff);
+        str[i] += diff;
+        
+        printf("%c",str[i++]);
     }
     return 0;
 }
